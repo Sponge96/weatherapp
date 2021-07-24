@@ -21,11 +21,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 15px 15px;
 }
 
 .search-box input {
     font-size: 30px;
     text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.452) 2px 2px;
+    border: none;
     outline: none;
 }
 
