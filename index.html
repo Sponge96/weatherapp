@@ -7,10 +7,16 @@
     <title>Weather App</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=INSERTKEY&libraries=places"
+      type="text/javascript"
+    ></script>
     <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="app-container">
       <div class="search-box">
         <input
           type="text"
@@ -28,8 +34,8 @@
       </div>
 
       <div class="temperature-details">
-        <h1>31c</h1>
-        <h1>mostly cloudy</h1>
+        <div class="temperature" data-temperature>10</div>
+        <div class="degree"><span>°C</span></div>
       </div>
     </div>
   </body>

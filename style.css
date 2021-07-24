@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-.container {
+.app-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
 }
 
 .search-box input {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   width: 100%;
   padding: 10px 10px;
@@ -38,6 +38,7 @@ body {
 }
 
 .location-information {
+  font-size: 30px;
   padding: 15px;
 }
 
@@ -48,8 +49,8 @@ body {
 }
 
 .temperature-details {
+  font-size: 40px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
