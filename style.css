@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(122, 212, 224), rgb(47, 66, 172));
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.location-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
