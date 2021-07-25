@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .search-box {
@@ -29,7 +30,7 @@ body {
   font-size: 40px;
   text-align: center;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.877);
   border-radius: 20px 80px;
   box-shadow: rgba(0, 0, 0, 0.452) 3px 3px;
@@ -37,21 +38,27 @@ body {
   outline: none;
 }
 
-.location-information {
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
-  padding: 15px;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.temperature {
+  font-size: 50px;
 }
 
-.temperature-details {
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.pac-icon {
+  display: none;
+}
+
+.pac-item {
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+
+.pac-item-query {
+  font-size: 1rem;
+  padding-right: 14px;
 }

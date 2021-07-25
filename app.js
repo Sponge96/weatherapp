@@ -1,9 +1,14 @@
-const temperature = document.querySelector("[data-temperature]")
-const locationName = document.querySelector("[data-location]");
-const icon = document.querySelector("[data-icon]")
-const input = document.querySelector("[data-city-search]");
-const autocomplete = new google.maps.places.Autocomplete(input);
+const locationName = document.querySelector(".location-name");
+const weatherIcon = document.querySelector(".weather-icon");
+const temperature = document.querySelector(".temperature");
 
+const input = document.querySelector(".location-search");
+const options = {
+  types: ["geocode"],
+  fields: ["name", "geometry"],
+};
+
+const autocomplete = new google.maps.places.Autocomplete(input, options);
 autocomplete.addListener("place_changed", onPlaceChanged);
 
 function onPlaceChanged() {
@@ -11,10 +16,11 @@ function onPlaceChanged() {
   if (!place.geometry) {
     return;
   } else {
-    
     locationName.textContent = place.name;
+
     const latitude = place.geometry.location.lat();
     const longitude = place.geometry.location.lng();
+
     const API = "";
     const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API}`;
 
@@ -23,8 +29,11 @@ function onPlaceChanged() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
-        temperature.textContent = Math.round(data.main.temp)
+        const temp = data.main.temp;
+        const icon = data.weather[0].icon;
+
+        temperature.textContent = Math.round(temp) + "°C";
+        weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
       });
   }
 }

@@ -17,24 +17,16 @@
   <body>
     <div class="app-container">
       <div class="search-box">
-        <input
+        <input class="location-search"
           type="text"
-          placeholder="Search for a city..."
-          data-city-search
+          placeholder="Search for a location..."
         />
       </div>
-
-      <div class="location-information" data-location>
-        <h1>London, UK</h1>
+      <div class="info-container">
+        <h1 class="location-name">London</h1>
+        <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@4x.png"></img>
       </div>
-
-      <div class="icon">
-        <h1>ICON</h1>
-      </div>
-
-      <div class="temperature-details">
-        <div class="temperature" data-temperature>10</div>
-        <div class="degree"><span>°C</span></div>
+        <div class="temperature">10°C</div>
       </div>
     </div>
   </body>
