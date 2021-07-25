@@ -9,4 +9,8 @@ Description:
 
 Uses the Google API to autocomplete input fields, hands relevant geolocation data (lat/long) to OpenWeatherMap query and populates webpage with relevant data.
 
-![ezgif-4-6fc63922b6e6](https://user-images.githubusercontent.com/20257044/126895052-790d40a3-2178-477a-b87d-5e7cd93f9bfb.gif)
+![weatherapp](https://user-images.githubusercontent.com/20257044/126895599-e91cc446-ee06-45b9-8787-e49a9d184817.gif)
+
+
+
+
